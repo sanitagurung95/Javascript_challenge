@@ -41,17 +41,17 @@ d3.select("tbody").html("");
     console.log(inputValue);
 
 // Apply filter to the table data to keep the rows where the dateTime value matches the filter value
-    var filteredData = tableData.filter(record => record.datetime === dateTime);
+    var filteredData = tableData.filter(datarow => datarow.datetime === dateTime);
         console.log(filteredData)
 
 // Display the filtered dataset
-
-  filteredData.forEach(ufoSightings);
-
-
+data.forEach(row => {
+  row = d3.select("tBody").append("tr");
+  Object.entries(row).forEach(([key,value]) => {
+      cell = row.append("td").text(value);
+  });
 });
-
-
+})
     
 
 
