@@ -5,8 +5,6 @@ var tableData = data;
 //Select the dataset 
 var tbody = d3.select("tbody");
 
- // Loop through each field in the datarow to use Arrow Functions!
- //each value as a table cell (td)
   tableData.forEach(ufoSighting => {
      row = d3.select("tbody").append("tr");
     Object.entries(ufoSighting).forEach(([key, value]) => {
