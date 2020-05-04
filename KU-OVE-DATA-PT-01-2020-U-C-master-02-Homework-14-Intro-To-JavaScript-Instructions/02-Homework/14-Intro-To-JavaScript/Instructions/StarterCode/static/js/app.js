@@ -34,9 +34,7 @@ function runEnter(event) {
         
  
  // Print the value to the console
-     console.log(dateTime);
      console.log(inputValue);
-
     
 // remove any existing data from the table
    tbody.html("");
